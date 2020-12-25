@@ -9,7 +9,6 @@ nav{
 .jumbotron {
   /*opacity:0.7;*/
   /* padding: 2rem 1rem; */
-  margin-top: -75px;
   /*background-color: #e9ecef;*/
   z-index:-99;
 }
@@ -18,6 +17,13 @@ nav{
         border-radius: 40px;
 }
 @media (min-width: 992px) {
+
+.navbar-brand, .nav-link{
+        color: aliceblue !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+
         .nav-link{
                 text-transform: uppercase;
                 margin-right: 29px;
@@ -30,5 +36,8 @@ nav{
                 margin:  auto;
                 padding-bottom: 5px;
                 margin-bottom: -8px;
+                 }
+                 .jumbotron{
+                        margin-top: -75px;
                  }
  } 
