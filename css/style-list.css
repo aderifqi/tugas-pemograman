@@ -1,3 +1,7 @@
+body{
+  background-image: url("../source/Museum-Tsunami.jpg");
+  background-size:cover;
+}
 .search{
   margin-top:5%; 
   width:50%;
