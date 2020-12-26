@@ -1,0 +1,15 @@
+{
+    "data": [
+        {
+            "lokasi": "Wisata Kota Banda Aceh",
+            "deskripsi": "Wisata Kota Banda Aceh, disini para wisatawan akan di ajak berkeliling kota banda aceh, dan melihat peninggalan bersejarah yang bereda di kota banda aceh.",
+            "gambar": "../source/masjid-raya-aceh.jpg"
+        },
+
+        {
+            "lokasi": "Wisata Kota Banda Aceh",
+            "deskripsi": "Wisata Kota Banda Aceh, disini para wisatawan akan di ajak berkeliling kota banda aceh, dan melihat peninggalan bersejarah yang bereda di kota banda aceh.",
+            "gambar": "../source/masjid-raya-aceh.jpg"
+        }
+    ]
+}
