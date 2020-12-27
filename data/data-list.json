@@ -10,6 +10,12 @@
             "lokasi": "Wisata Sabang",
             "deskripsi": "Wisata salah satu  yang paling terkenal dari aceh ",
             "gambar": "./source/wisata-aceh"
+        },
+        {
+            "lokasi": "Wisata Pulau Rubiah", 
+            "deskripsi": "Pulau yang tak jauh dari pulu sabang Taman Laut Pulau Rubiah Merupakan sebuah pulau cantik yang masih asri dengan luas wilayah sekitar 2.600an Hektar yang terkenal dengan pemandangan alam kerajaan bawah laut nya.",
+            "gambar":"./source/Pulau Rubiah.jpeg"
+
         }
     ]
 }
