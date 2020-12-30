@@ -7,7 +7,7 @@ function card(m){
           <div class="card-body">
             <h5 class="card-title">${m.lokasi}</h5>
             <p class="card-text">${m.deskripsi}</p>
-            <button class="btn btn-primary" type="button">booking</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> booking </button>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ function dataWisata(f='false'){
                list += card(d)
             }
          })
-         const cardWista = document.querySelector('.cardWista')
+         const cardWista = document.querySelector('.cardWisata')
          cardWista.innerHTML = list
          
       })
