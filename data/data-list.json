@@ -11,10 +11,25 @@
             "deskripsi": "Wisata salah satu  yang paling terkenal dari aceh ",
             "gambar": "./source/wisata-aceh"
         },
+
         {
             "lokasi": "Wisata Pulau Rubiah", 
             "deskripsi": "Pulau yang tak jauh dari pulu sabang Taman Laut Pulau Rubiah Merupakan sebuah pulau cantik yang masih asri dengan luas wilayah sekitar 2.600an Hektar yang terkenal dengan pemandangan alam kerajaan bawah laut nya.",
             "gambar":"./source/Pulau Rubiah.jpeg"
+
+        },
+
+        {
+            "lokasi": "Wisata Disekitar Rumah Adat Aceh", 
+            "deskripsi": "Rumah Krong Bade adalah rumah adat dari Nanggroe Aceh Darussalam. Rumah Krong Bade juga biasa dikenal dengan nama rumoh Aceh. Rumah ini mempunyai tangga depan yang digunakan bagi tamu atau orang yang tinggal untuk masuk ke dalam rumah. Rumah Krong Bade adalah salah satu budaya Indonesia yang hampir punah.",
+            "gambar":"./source/Rumah Adat Aceh.jpg"
+
+        },
+
+        {
+            "lokasi": "Wisata Pantai Kasih Sabanh", 
+            "deskripsi": "Pantai Kasih bisa jadi destinasi pertama yang kamu kunjungi di Sabang. Jaraknya cuma 5 menit dari pusat kota.",
+            "gambar":"./source/wisata-sabang-12-1024x683.jpg"
 
         }
     ]
