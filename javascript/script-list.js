@@ -1,4 +1,4 @@
-
+//card list wisata
 function card(m){
    return `
       <div class="col">
@@ -14,7 +14,9 @@ function card(m){
    `
 }
 
+// fungsi untuk mencari wisata
 function filteredItems(keyword,data) {
+   
    let filtered = []
     if(data.lokasi.toLowerCase().match(keyword.toLowerCase())){
        filtered.push(card(data))
@@ -25,26 +27,31 @@ function filteredItems(keyword,data) {
       return filtered 
 }
 
+//retrieve data from json
+//
 function dataWisata(f='false'){
    fetch("./data/data-list.json")
    .then(response => response.json())
-      .then(data =>{
-         const daftar = data.daftar
-         let list = ''
-         daftar.forEach(d => { 
-            if(f != 'false'){
-               let searchWisata = filteredItems(f,d)
-               list += searchWisata
-            }else{
-               list += card(d)
-            }
-         })
-         const cardWista = document.querySelector('.cardWisata')
-         cardWista.innerHTML = list
-         
-      })
+    .then(data =>{
+       const daftar = data.daftar
+       let list = ''
+       daftar.forEach(d => { 
+          if(f != 'false'){
+             let searchWisata = filteredItems(f,d)
+             list += searchWisata
+          }else{
+             list += card(d)
+          }
+       })
+       const cardWista = document.querySelector('.cardWisata')
+       cardWista.innerHTML = list
+       
+    })
 }
+//memangil fungsi,
 dataWisata()
+
+//ketika tombbol search di tekan
 let form = document.querySelector(".searchForm")
 form.onsubmit = function(e){
    event.preventDefault()
