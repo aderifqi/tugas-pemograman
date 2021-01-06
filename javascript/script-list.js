@@ -7,10 +7,42 @@ function card(m){
           <div class="card-body">
             <h5 class="card-title">${m.lokasi}</h5>
             <p class="card-text">${m.deskripsi}</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> booking </button>
+            <button type="button" class="btn detailBooking btn-primary" data-id="${m.id}" data-bs-toggle="modal" data-bs-target="#exampleModal"> booking </button>
           </div>
         </div>
       </div>
+   `
+}
+function detail(m){
+   return `
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">${m.lokasi}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form>
+           <div class="modal-body">
+              <div class="col-md-6">
+                 <td>Nama Lengkap</td>
+                 <td><input type="text" name="nama" required></td>
+              </div>
+              <div class="col-md-6">
+                 <td>Jumlah anggota Yang Ikut</td>
+                 <td><input type="text" Jumlah anggota Yang Ikut="Jumlah anggota Yang Ikut" required></td>
+              </div>
+              <div class="col-md-6">
+                 <label for="inputEmail4" class="form-label">Pilihan Kamar Hotel</label>
+                 <select>
+                    <option>Kamar (STD))</option>
+                    <option>Kamar (SUP)</option>
+                    <option>Kamar (DLX))</option>
+                    <option>Kamar (JRSTE))</option>
+                 </select>
+              </div> 
+              <div class="modal-footer">
+                 <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+           </div>
+        </form>
    `
 }
 
@@ -41,13 +73,33 @@ function dataWisata(f='false'){
              list += searchWisata
           }else{
              list += card(d)
+             console.log(d)
           }
        })
-       const cardWista = document.querySelector('.cardWisata')
-       cardWista.innerHTML = list
+       const cardWista = document.querySelector('.cardWisata');
+       cardWista.innerHTML = list;
+
+       const detailBooking = document.querySelectorAll('.detailBooking');
+       detailBooking.forEach(btn => {
+          btn.addEventListener('click',function(){
+             const id = this.dataset.id
+             console.log(id)
+             let tampilDetail = ''
+             daftar.forEach(d => {
+                if(d.id == id){
+                   tampilDetail += detail(d)
+                }
+             });
+             modalContent = document.querySelector('.modal-content')
+             modalContent.innerHTML = tampilDetail
+             console.log(tampilDetail)
+          })
+       })
+
        
     })
 }
+
 //memangil fungsi,
 dataWisata()
 
