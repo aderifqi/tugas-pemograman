@@ -31,40 +31,37 @@
       </div>
     </div>
   </nav>
-  <!-- Button trigger modal -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Silahkan isi data di bawah ini</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="col-md-6">
-          <td>Nama Lengkap</td>
-          <td><input type="text"></td>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Silahkan isi data di bawah ini</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="col-md-6">
-          <td>Jumlah anggota Yang Ikut</td>
-          <td><input type="text"></td>
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Pilihan Kamar Hotel</label>
-            <td><select>
-              <option>Kamar (STD))</option>
-              <option>Kamar (SUP)</option>
-              <option>Kamar (DLX))</option>
-              <option>Kamar (JRSTE))</option>
-            </select>
-        </div> 
+        <form>
+          <div class="modal-body">
+            <div class="col-md-6">
+              <td>Nama Lengkap</td>
+              <td><input type="text" name="nama" required></td>
+            </div>
+            <div class="col-md-6">
+            <td>Jumlah anggota Yang Ikut</td>
+            <td><input type="text" Jumlah anggota Yang Ikut="Jumlah anggota Yang Ikut" required></td>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Pilihan Kamar Hotel</label>
+              <td><select>
+                <option>Kamar (STD))</option>
+                <option>Kamar (SUP)</option>
+                <option>Kamar (DLX))</option>
+                <option>Kamar (JRSTE))</option>
+              </select>
+          </div> 
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+        </form>
         
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
       </div>
     </div>
   </div>
