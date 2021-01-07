@@ -10,14 +10,14 @@
         {
 
             "id" : 2,
-            "lokasi": "Wisata Sabang",
-            "deskripsi": "Wisata salah satu  yang paling terkenal dari aceh ",
-            "gambar": "./source/wisata-aceh"
+            "lokasi": "Wisata pantai lancok Aceh Utara",
+            "deskripsi": "Salah satu wisata yang ada di aceh utara ialah pantai nya yang menarik dan banyak spot foto untuk anda yang suka foto-foto yang lokasi nya bertepatan di Gampong Lancok Kec. Syamtalira Bayu Kab.Aceh Utara. ",
+            "gambar": "./source/lancok.jpg"
         },
 
         {
             "id" : 3,
-            "lokasi": "Wisata Pulau Rubiah", 
+            "lokasi": "Wisata Pulau Rubiah Sabang", 
             "deskripsi": "Pulau yang tak jauh dari pulu sabang Taman Laut Pulau Rubiah Merupakan sebuah pulau cantik yang masih asri dengan luas wilayah sekitar 2.600an Hektar yang terkenal dengan pemandangan alam kerajaan bawah laut nya.",
             "gambar":"./source/Pulau Rubiah.jpeg"
 
@@ -25,18 +25,26 @@
 
         {
             "id" : 4,
-            "lokasi": "Wisata Disekitar Rumah Adat Aceh", 
-            "deskripsi": "Rumah Krong Bade adalah rumah adat dari Nanggroe Aceh Darussalam. Rumah Krong Bade juga biasa dikenal dengan nama rumoh Aceh. Rumah ini mempunyai tangga depan yang digunakan bagi tamu atau orang yang tinggal untuk masuk ke dalam rumah. Rumah Krong Bade adalah salah satu budaya Indonesia yang hampir punah.",
-            "gambar":"./source/Rumah Adat Aceh.jpg"
+            "lokasi": "Wisata Kabupaten Simeulue", 
+            "deskripsi": "Kabupaten Simeulue adalah salah satu kabupaten di Aceh, Indonesia. Berada kurang lebih 150 km dari lepas pantai barat Aceh, tempat wisata yang ramai di kunjungi Seperti pantai dan danau yang masi alami nan sejuk.",
+            "gambar":"./source/simeulue.png"
 
         },
 
         {
             "id" : 5,
-            "lokasi": "Wisata Pantai Kasih Sabanh", 
-            "deskripsi": "Pantai Kasih bisa jadi destinasi pertama yang kamu kunjungi di Sabang. Jaraknya cuma 5 menit dari pusat kota.",
-            "gambar":"./source/wisata-sabang-12-1024x683.jpg"
+            "lokasi": "Wisata Tapak Tuan Tapa Aceh Selatan ", 
+            "deskripsi": "Bukan hanya legenda, ternyata kisah tapak tuan tapa juga memiliki jejak yang bisa dikunjungi hingga saat ini. Tapak tuan tapa adalah sebuah bentuk tapak kaki yang besar di atas batu karang yang lokasinya berada di pesisir pantai Kab. Aceh selatan.",
+            "gambar":"./source/Tapaktuan.png"
+
+        },
+        {
+            "id" : 6,
+            "lokasi": "Wisata Pantan Terong Brebesan Gayo", 
+            "deskripsi": "Pantan Terong Takengon adalah sebuah bukit yang berada di dataran tinggi Gayo Kec. Bebesan Kab. Aceh Tengah.",
+            "gambar":"./source/Takengon.png"
 
         }
+
     ]
 }
