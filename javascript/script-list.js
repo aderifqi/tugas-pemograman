@@ -1,5 +1,5 @@
 //card list wisata
-function card(m){
+function card(m) {
    return `
       <div class="col">
         <div class="card">
@@ -13,13 +13,17 @@ function card(m){
       </div>
    `
 }
-function detail(m){
+
+function detail(m) {
    return `
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">${m.lokasi}</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form>
+        <div class="col">
+                <img src="./source/Rumah Adat Aceh.jpg" alt="" srcset="" style="width: 250px;">
+              </div>
            <div class="modal-body">
               <div class="col-md-6">
                  <td>Nama Lengkap</td>
@@ -47,57 +51,57 @@ function detail(m){
 }
 
 // fungsi untuk mencari wisata
-function filteredItems(keyword,data) {
-   
+function filteredItems(keyword, data) {
+
    let filtered = []
-    if(data.lokasi.toLowerCase().match(keyword.toLowerCase())){
-       filtered.push(card(data))
-    }else if(keyword == ''){
-       filtered.push(card(data))
-    }
-      console.log(filtered)
-      return filtered 
+   if (data.lokasi.toLowerCase().match(keyword.toLowerCase())) {
+      filtered.push(card(data))
+   } else if (keyword == '') {
+      filtered.push(card(data))
+   }
+   console.log(filtered)
+   return filtered
 }
 
 //retrieve data from json
 //
-function dataWisata(f='false'){
+function dataWisata(f = 'false') {
    fetch("./data/data-list.json")
-   .then(response => response.json())
-    .then(data =>{
-       const daftar = data.daftar
-       let list = ''
-       daftar.forEach(d => { 
-          if(f != 'false'){
-             let searchWisata = filteredItems(f,d)
-             list += searchWisata
-          }else{
-             list += card(d)
-             console.log(d)
-          }
-       })
-       const cardWista = document.querySelector('.cardWisata');
-       cardWista.innerHTML = list;
+      .then(response => response.json())
+      .then(data => {
+         const daftar = data.daftar
+         let list = ''
+         daftar.forEach(d => {
+            if (f != 'false') {
+               let searchWisata = filteredItems(f, d)
+               list += searchWisata
+            } else {
+               list += card(d)
+               console.log(d)
+            }
+         })
+         const cardWista = document.querySelector('.cardWisata');
+         cardWista.innerHTML = list;
 
-       const detailBooking = document.querySelectorAll('.detailBooking');
-       detailBooking.forEach(btn => {
-          btn.addEventListener('click',function(){
-             const id = this.dataset.id
-             console.log(id)
-             let tampilDetail = ''
-             daftar.forEach(d => {
-                if(d.id == id){
-                   tampilDetail += detail(d)
-                }
-             });
-             modalContent = document.querySelector('.modal-content')
-             modalContent.innerHTML = tampilDetail
-             console.log(tampilDetail)
-          })
-       })
+         const detailBooking = document.querySelectorAll('.detailBooking');
+         detailBooking.forEach(btn => {
+            btn.addEventListener('click', function () {
+               const id = this.dataset.id
+               console.log(id)
+               let tampilDetail = ''
+               daftar.forEach(d => {
+                  if (d.id == id) {
+                     tampilDetail += detail(d)
+                  }
+               });
+               modalContent = document.querySelector('.modal-content')
+               modalContent.innerHTML = tampilDetail
+               console.log(tampilDetail)
+            })
+         })
 
-       
-    })
+
+      })
 }
 
 //memangil fungsi,
@@ -105,12 +109,10 @@ dataWisata()
 
 //ketika tombbol search di tekan
 let form = document.querySelector(".searchForm")
-form.onsubmit = function(e){
+form.onsubmit = function (e) {
    event.preventDefault()
    let submit = document.querySelector(".searchInput").value;
    dataWisata(submit);
 }
 
-   //.catch(error => console.error(error))
-
-
+//.catch(error => console.error(error))
