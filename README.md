@@ -3,12 +3,16 @@
 
 cheatsheet git :
 
-  - download/clone  repo : 
+  - download/clone repo : 
     ```
     $ git clone 'https://github.com/aderifqi85/tugas-pemograman.git'
     ```
   - upload/push ke repo : 
     ```
     $ git push origin <nama branch>
+    ```
+  - update/pull dari repo : 
+    ```
+    $ git pull
     ```
  
