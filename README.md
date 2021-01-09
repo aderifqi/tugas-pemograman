@@ -1,8 +1,14 @@
-# tugas-pemograman
-aplikasi travel sederhana berbasis javascript dan bootstrap
+# Tugas Pemograman Web
+> Web static sederhana menggunakan  javascript dan bootstrap dengan judul Travel
 
 cheatsheet git :
 
--git clone 'https://github.com/aderifqi85/tugas-pemograman.git'  = download dari repo
--git push origin \<nama\> = push/upload ke repo
-
+  - download/clone  repo : 
+    ```
+    $ git clone 'https://github.com/aderifqi85/tugas-pemograman.git'
+    ```
+  - upload/push ke repo : 
+    ```
+    $ git push origin <nama branch>
+    ```
+ 
