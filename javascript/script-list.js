@@ -21,31 +21,41 @@ function detail(m) {
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form>
-        <div class="col">
-                <img src="./source/Rumah Adat Aceh.jpg" alt="" srcset="" style="width: 250px;">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+              <img src="${m.gambar}" class="card-img-top h- " style="height: 230px;" alt="lokasi wisata">
+              <h5 class="card-title">${m.lokasi}</h5>
+              <p class="card-text">${m.deskripsi}</p>
               </div>
-           <div class="modal-body">
-              <div class="col-md-6">
-                 <td>Nama Lengkap</td>
-                 <td><input type="text" name="nama" required></td>
+              <div class="col">
+                <div class="col-md-6">
+                  <td>Nama Lengkap</td>
+                  <td><input type="text" name="nama" required></td>
+                </div>
+                <div class="col-md-6">
+                  <td>Jumlah anggota Yang Ikut</td>
+                  <td><input type="text" Jumlah anggota Yang Ikut="Jumlah anggota Yang Ikut" required></td>
+                </div>
+                <div class="col-md-6">
+                  <td>Jumlah Hari Liburan</td>
+                  <td><input type="text" Jumlah Hari Liburan="Jumlah Hari Liburan" required></td>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Pilihan Kamar Hotel</label>
+                  <td><select>
+                      <option>Kamar (STD))</option>
+                      <option>Kamar (SUP)</option>
+                      <option>Kamar (DLX))</option>
+                      <option>Kamar (JRSTE))</option>
+                    </select>
+                </div>
               </div>
-              <div class="col-md-6">
-                 <td>Jumlah anggota Yang Ikut</td>
-                 <td><input type="text" Jumlah anggota Yang Ikut="Jumlah anggota Yang Ikut" required></td>
-              </div>
-              <div class="col-md-6">
-                 <label for="inputEmail4" class="form-label">Pilihan Kamar Hotel</label>
-                 <select>
-                    <option>Kamar (STD))</option>
-                    <option>Kamar (SUP)</option>
-                    <option>Kamar (DLX))</option>
-                    <option>Kamar (JRSTE))</option>
-                 </select>
-              </div> 
-              <div class="modal-footer">
-                 <button type="submit" class="btn btn-primary">Save</button>
-              </div>
-           </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Save</button>
+            </div>
         </form>
    `
 }
