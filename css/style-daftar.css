@@ -1,6 +1,7 @@
 body {
   background-image: url("../source/wisata-aceh");
   background-size: cover;
+  background-attachment:fixed;
 }
 
 footer{
