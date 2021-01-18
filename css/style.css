@@ -53,5 +53,9 @@ footer {
         height: 100px;
         background-color: black;
         color: blanchedalmond;
+        bottom:0;
+}
 
+footer p{
+        padding:50px;
 }
