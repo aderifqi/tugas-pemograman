@@ -2,36 +2,29 @@
         font-family: viga;
         font-size: 32px;
 }
-
 nav {
         z-index: 9999999999999999999999999999999999999999999999999999999999;
 }
-
 .jumbotron {
         /*opacity:0.7;*/
         /* padding: 2rem 1rem; */
         /*background-color: #e9ecef;*/
         z-index: -99;
 }
-
 .tombol {
         text-transform: uppercase;
         border-radius: 40px;
 }
-
 @media (min-width: 992px) {
-
         .navbar-brand,
         .nav-link {
                 color: aliceblue !important;
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
         }
-
         .nav-link {
                 text-transform: uppercase;
                 margin-right: 29px;
         }
-
         .nav-link:hover::after {
                 content: '';
                 display: block;
@@ -41,12 +34,10 @@ nav {
                 padding-bottom: 5px;
                 margin-bottom: -8px;
         }
-
         .jumbotron {
                 margin-top: -75px;
         }
 }
-
 footer {
         text-align: center;
         width: 100%;
@@ -55,7 +46,6 @@ footer {
         color: blanchedalmond;
         bottom:0;
 }
-
 footer p{
         padding:50px;
 }
